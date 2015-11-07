@@ -6,9 +6,22 @@
 </description>
     <link>http://tremulaes.com/</link>
     <atom:link href="http://tremulaes.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 20 Oct 2015 10:07:18 -0400</pubDate>
-    <lastBuildDate>Tue, 20 Oct 2015 10:07:18 -0400</lastBuildDate>
+    <pubDate>Sat, 07 Nov 2015 15:03:04 -0600</pubDate>
+    <lastBuildDate>Sat, 07 Nov 2015 15:03:04 -0600</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Updated About Me</title>
+        <description>&lt;p&gt;I’ve updated my &lt;a href=&quot;/about&quot;&gt;about me&lt;/a&gt; section with some specific content about myself instead of the general Jekyll nonsense. There’s not a whole lot going on with the site yet… I’m still debating which of my old posts I should port over, and how exactly I want this site to look. I really struggle with picking sensible colors; maybe I should ask for help?&lt;/p&gt;
+</description>
+        <pubDate>Sat, 07 Nov 2015 09:01:00 -0600</pubDate>
+        <link>http://tremulaes.com/blog/2015/11/07/first-steps.html</link>
+        <guid isPermaLink="true">http://tremulaes.com/blog/2015/11/07/first-steps.html</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
     
       <item>
         <title>New Site</title>
@@ -22,7 +35,7 @@
 
 &lt;p&gt;Welcome to my new site. Hope you’ll stick around and enjoy it :)&lt;/p&gt;
 </description>
-        <pubDate>Fri, 16 Oct 2015 10:55:37 -0400</pubDate>
+        <pubDate>Fri, 16 Oct 2015 09:55:37 -0500</pubDate>
         <link>http://tremulaes.com/blog/2015/10/16/welcome-to-new-site.html</link>
         <guid isPermaLink="true">http://tremulaes.com/blog/2015/10/16/welcome-to-new-site.html</guid>
         
