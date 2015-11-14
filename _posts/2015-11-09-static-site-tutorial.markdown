@@ -1,8 +1,8 @@
 ---
 title: "Static Site Setup Tutorial"
 layout: post
-topcolor: red
-excerpt_separator: ""
+date:   2015-11-09 14:55:37
+categories: blog
 ---
 
 ## Using Jekyll, Wercker, and AWS to get a static site hosted for cheap
