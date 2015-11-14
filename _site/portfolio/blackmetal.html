@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Portfolio: Blackmetal B* Demo</title>
+  <meta name="description" content="A land of code, coffee, but practically no common sense.
+">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://tremulaes.com/portfolio/blackmetal.html">
+  <link rel="alternate" type="application/rss+xml" title="Chris Singer" href="http://tremulaes.com/feed.xml" />
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Chris Singer</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        <a class="page-link" href="/about">About</a>
+        <a class="page-link" href="/portfolio">Portfolio</a>
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Portfolio: Blackmetal B* Demo</h1>
+  </header>
+
+  <article class="post-content">
+    <p><img src="/img/blackmetal-gameplay.jpg" alt="Blackmetal Gameplay" /></p>
+<div>Snapshot of some Blackmetal B* action.</div>
+
+<p>Over the course of a weekend, I dove back into my beloved Ruby language and <a href="https://github.com/gosu/gosu">Gosu</a> library to slap together another little game demo. I’ve always enjoyed top-down shooters a great deal- the first PC game I can ever remember playing was the beautiful <a href="http://en.wikipedia.org/wiki/Tyrian_%28video_game%29">Tyrian</a> top down shooter that offered pretty impressive music, graphics and even storyline for it’s time. Even 20 years old, the game remains fun and very playable.</p>
+
+<p>As sort of an homage to Tyrian, I decided to build a small demo that shared some basic gameplay with it. I also wanted to do it in under a strict deadline as an extra challenge and so contributed no additional code after 48 hours had expired, working only from saturday morning until late Sunday night.</p>
+
+<h2 id="the-design">The Design</h2>
+
+<p>Overall, the game itself is fairly small. I started off building simply the gameplay where your ship fights a never-ending horde of enemies that swoop down and sort of try to kill you. There isn’t a whole lot more to what is going on- just the player, a horde of enemies and lots and lots of bullets.</p>
+
+<p>Once I got the core shoot’em’up features running, I was almost at a loss as to what to do next. There were so many paths I could have gone down to add features, but with such a tight and limited schedule it was hard to know what would be best. In the end, I went with flashy- adding in additional weapons. An alternate gun was added on top of the single bullet fire, and eventually a timed starbust-style bomb was added in as well.</p>
+
+<p>With more weapons came a need for additional enemies. Since I already had enemies that floated down and moved in near random patterns, I thought a more static turret enemy would be cool. I added them in and have them scroll down at a slower pace, and rather than firing randomly, they attack at regularly timed intervals with missiles that actually fire to the player’s position at time of firing- finally got to use some of that trig from high school math.</p>
+
+<p>Next on my list came a menu UI that would allow the player to select difficulty and track their high scores for each difficulty level. Implementing ActiveRecord into the project was surprisingly easy and the database setup was extremely light and simple. Building the menu UI with some cool graphical effects was probably one of the most challenging aspects of the project as a whole- text with changing colors and a sliding menu certainly looked nice, but man, what a pain to put into place!</p>
+
+<p><img src="/img/blackmetal-menu.jpg" alt="Game Title and Menu" /></p>
+<div>Game Title/Menu Screen</div>
+
+<h2 id="the-technical">The Technical</h2>
+
+<p>Blackmetal B* was perhaps the most challenging development I’ve ever done. Keeping the project’s code design clean was one of my biggest focuses of the project. I tried my best to follow a lot of guidelines laid down by <a href="http://www.poodr.com/">Santi Metz</a> as I built my code and I’m really proud of how it came out.</p>
+
+<p>Keeping methods small, keeping classes slim and never building anything larger than what I needed helped keep my codebase small and sleak. Implementing new features as vertical slices was almost a breeze because I always knew where things needed to go and dependencies were small. I struggled a lot with deciding how to build a good project file structure, but since it was a short project I just decided to ignore it and kept everything dumped into the main file folder. Since it was a small project, this wasn’t very inhibitive, but that would likely be the first change I’d make if I wanted to continue working on the project.</p>
+
+<p>The artwork for the project was as minimal as possible. I reused everything I possibly could- the player’s ship was just the squid token from this very website, the floating enemies were the protagonist from my last project <a href="/portfolio/gemfarm/">Gemfarm</a>, the background was some NASA photo, and all the bullets were made using <a href="http://www.piskelapp.com/">PiskellApp</a>, great for making simple pixel art. I had a lot of fun making the animations, but I tried to keep it as simple as possible so that I could focus on the game code itself instead of art. There was no music or sound of any kind.</p>
+
+<p><img src="http://piskel-imgstore-b.appspot.com/img/0066956b-0d76-11e5-a0ac-c578120a4d79.gif" alt="Spinning star animation" /></p>
+
+<p>One of the biggest blockers I ran into came after the first day of development. After more than a few sprites would get onto the page, everything would start to slow down until it was crawling and completely unusable, usually about 10-15 seconds into gameplay. At first, I thought it might have to do with Ruby’s garbage collection and issues with my collision detection engine. I spent several hours reading up on advanced collision detection strategies and garbage collection, all to no avail.</p>
+
+<p>After a good night’s sleep, I woke up and realized the issue may lie elsewhere. Although the images files were themselves small, I was reloading them each time a new sprite was created. Every single sprite had to load not only itself but also it’s entire image into memory. Realizing that may be eating up all my memory, I decided to build a small asset library class to handle images and fonts.</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="lineno"> 1</span> <span class="k">class</span> <span class="nc">Bullets</span>
+<span class="lineno"> 2</span>     <span class="kp">attr_reader</span> <span class="ss">:small</span><span class="p">,</span> <span class="ss">:enemy_small</span><span class="p">,</span> <span class="ss">:light_orb</span><span class="p">,</span> <span class="ss">:spinning_star</span>
+<span class="lineno"> 3</span> 
+<span class="lineno"> 4</span>     <span class="k">def</span> <span class="nf">initialize</span><span class="p">(</span><span class="n">game</span><span class="p">)</span>
+<span class="lineno"> 5</span>       <span class="vi">@small</span> <span class="o">=</span> <span class="no">Gosu</span><span class="o">::</span><span class="no">Image</span><span class="o">.</span><span class="n">load_tiles</span><span class="p">(</span><span class="n">game</span><span class="p">,</span> <span class="s2">&quot;assets/img/bullet.png&quot;</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="kp">false</span><span class="p">)</span>
+<span class="lineno"> 6</span>       <span class="vi">@enemy_small</span> <span class="o">=</span> <span class="no">Gosu</span><span class="o">::</span><span class="no">Image</span><span class="o">.</span><span class="n">load_tiles</span><span class="p">(</span><span class="n">game</span><span class="p">,</span> <span class="s2">&quot;assets/img/enemy_bullet.png&quot;</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="kp">false</span><span class="p">)</span>
+<span class="lineno"> 7</span>       <span class="vi">@light_orb</span> <span class="o">=</span> <span class="no">Gosu</span><span class="o">::</span><span class="no">Image</span><span class="o">.</span><span class="n">load_tiles</span><span class="p">(</span><span class="n">game</span><span class="p">,</span> <span class="s2">&quot;assets/img/light_orb.png&quot;</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="kp">false</span><span class="p">)</span>
+<span class="lineno"> 8</span>       <span class="vi">@spinning_star</span> <span class="o">=</span> <span class="no">Gosu</span><span class="o">::</span><span class="no">Image</span><span class="o">.</span><span class="n">load_tiles</span><span class="p">(</span><span class="n">game</span><span class="p">,</span> <span class="s2">&quot;assets/img/spinning_star.png&quot;</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="kp">false</span><span class="p">)</span>
+<span class="lineno"> 9</span>     <span class="k">end</span>
+<span class="lineno">10</span>   <span class="k">end</span></code></pre></div>
+
+<p>Once that was resolved, everything began moving at a good speed and I ran into no further issues with memory. Loading all my images up at game start and simply referring to them was a nice strategy and one that I definitely plan on using in the future for bigger projects, though projects with MonoGame and XNA have this built in with their content pipelines.</p>
+
+<p>Once of the things I’m most proud of with the code here is the small but still functional state machine that I built into the project. Gosu is a light render engine and doesn’t come with state built into it at all, but I wanted a way to move between different parts of the game- namely the title screen and the gameplay itself. I tried to keep at as simple as possible, moving between the different states cleanly, with plenty of room for additional states to be managed as well.</p>
+
+<h2 id="the-ugly">The Ugly</h2>
+
+<p>Although I am proud of a lot of different aspects of this game, especially under the time constraints, there is definitely some terrible practices and code uses involved. I used some nasty class variables with my object factories practically as global collections because I couldn’t find a better way to give appropriate access to my collision engine; getting rid of those would absolutely be my first refactor. I have a pretty poor understanding of the factory design strategy and would want to research it a little more to see better ways to implement it.</p>
+
+<p>I also strongly dislike my collision engine. It’s very straight forward and simple but is extremely inefficient- every object being calculated against every other object each cycle. I tried to cut this down by checking only enemies against player objects, but it’s still functionally O(c^n). After reading up on collision engine strategies, I discovered that this is a pretty common issue in game dev and better solutions can take a really significant amount of time to draw up.</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="lineno"> 1</span> <span class="k">class</span> <span class="nc">CollisionEngine</span>
+<span class="lineno"> 2</span>   <span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">check</span><span class="p">(</span><span class="n">player</span><span class="p">)</span>
+<span class="lineno"> 3</span>     <span class="n">baddies</span> <span class="o">=</span> <span class="no">Enemies</span><span class="o">.</span><span class="n">enemies</span> <span class="o">+</span> <span class="no">Bullets</span><span class="o">.</span><span class="n">enemy_bullets</span>
+<span class="lineno"> 4</span>     <span class="n">goodies</span> <span class="o">=</span> <span class="o">[</span><span class="n">player</span><span class="o">]</span> <span class="o">+</span> <span class="no">Bullets</span><span class="o">.</span><span class="n">player_bullets</span>
+<span class="lineno"> 5</span>     <span class="n">baddies</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">b</span><span class="o">|</span>
+<span class="lineno"> 6</span>       <span class="n">goodies</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">g</span><span class="o">|</span>
+<span class="lineno"> 7</span>         <span class="k">if</span> <span class="n">b</span><span class="o">.</span><span class="n">collide?</span><span class="p">(</span><span class="n">g</span><span class="p">)</span>
+<span class="lineno"> 8</span>           <span class="n">b</span><span class="o">.</span><span class="n">collide</span><span class="p">(</span><span class="n">g</span><span class="p">)</span>
+<span class="lineno"> 9</span>           <span class="n">g</span><span class="o">.</span><span class="n">collide</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+<span class="lineno">10</span>         <span class="k">end</span>
+<span class="lineno">11</span>       <span class="k">end</span>
+<span class="lineno">12</span>     <span class="k">end</span>
+<span class="lineno">13</span>   <span class="k">end</span>
+<span class="lineno">14</span> <span class="k">end</span></code></pre></div>
+
+<p>Another glaring opportunity for improvement is my enemy movement strategies- I just threw in a bunch of randomized elements but their use is completely unscalable and largely unusuable if I actually want to program in anything heavier or more intentional. I’d like to develop a better strategy that can accept plotted out trajectories or behaviors for more control, though the small scale of the project didn’t really necessitate it. Just a personal desire to have better enemies, or something close to a functional AI.</p>
+
+<h2 id="the-result">The Result</h2>
+
+<p>Overall I was really pleased with the Blackmetal B* Demo. I was surprised as how much I was able to do in just a weekend, and it came out looking pretty decent, even with the hilariously repurposed art. This project really pushed my understanding of OO design patterns and got me thirsty for better understanding of design strategies and solutions for common programming problems. As a second venture into game development, I couldn’t have been happier with this demo project.</p>
+
+<p>I hope to take this project and do even more with it in the near future, though I’ll likely be moving away from Ruby for next steps. I’m looking pretty heavily at either Unity or MonoGame for frameworks, writing in C#. I’d like to start building more complete samples and to take on heavier burdens which likely means using a better platform than Ruby and Gosu. It’s going to be a real challenge, but I want to do Blackmetal B* the honor it deserves by bringing it to life with the right tools for the job.</p>
+
+<iframe width="420" height="315" src="https://www.youtube.com/embed/ljGJgZAjw7Q" frameborder="0" allowfullscreen=""></iframe>
+
+<p>Check the <a href="https://github.com/secade/blackmetal-b-star">Github Repo</a> for the code, and feel free to contact me if you want to know anything else about my game dev adventures or the Gosu library.</p>
+
+  </article>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Chris Singer</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li>Chris Singer</li>
+          <li><a href="mailto:ccsinger@gmail.com">ccsinger@gmail.com</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/secade">
+              <span class="icon  icon--github">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+                </svg>
+              </span>
+
+              <span class="username">secade</span>
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/tremulaes">
+              <span class="icon  icon--twitter">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809
+                  c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/>
+                </svg>
+              </span>
+
+              <span class="username">tremulaes</span>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        <p class="text">A land of code, coffee, but practically no common sense.
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

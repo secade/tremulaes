@@ -6,12 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>About</title>
-  <meta name="description" content="A land of code, coffee, but practically no common sense.
-">
+  <title>Gemfarm Preview</title>
+  <meta name="description" content="Although I did want to take a big leap forward from the old CLI-based game, I didn't want to destroy my own sanity by doing something really out there/crazy ...">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://tremulaes.com/about/">
+  <link rel="canonical" href="http://tremulaes.com/2015/02/18/gemfarm_intro.html">
   <link rel="alternate" type="application/rss+xml" title="Chris Singer" href="http://tremulaes.com/feed.xml" />
 </head>
 
@@ -49,17 +48,39 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">About</h1>
+    <h1 class="post-title">Gemfarm Preview</h1>
+    <p class="post-meta">Feb 18, 2015</p>
   </header>
 
   <article class="post-content">
-    <p>I believe development is the perfect union between creative expression and logical interpretation. My role as a developer is to use every skill I have to find unique and creative solutions to problems. I want to bring a positive and excited energy with me wherever I go.</p>
+    <h1 id="new-project-gemfarm">New Project: Gemfarm</h1>
+<p>## The Inspiration</p>
 
-<p>Development attracted me due to its dual nature of solving both technical problems and people problems. The intellectual challenge of constantly evolving technologies and culture in dev is a big part of what attracted me to the field; always having something new to push me, to stretch me and for me to explore is exhilarating and helps satisfy my innate curiosity.</p>
+<p>Although I have no desire to do it professionally, I’ve always had a desire to do some video game development. My old college roommate and good friend is now a professional indie dev with the <a href="http://hitboxteam.com/">Hitbox Team</a> studio and I was able to meet a lot of other really passionate devs by attending PAX Seattle last summer. Suffice to say, my appetite was whetted.</p>
 
-<p>Since learning how to code, a favorite hobby of mine has become game design. The complex nature of building games and the team dynamics involved in bringing a project together are really exciting topics for me, and the ability to see something that I’ve helped to create come to completion brings a real sense of satisfaction. Specifically my interests are currently web development, but especially love solving any complex problem. Though my first love is Ruby, any other language or stack is just a new world to explore.</p>
+<p>After working on a homebrew, ruby CLI version of <a href="/portfolio/rubysweeper/">minesweeper</a>, I wanted to go a lot further. Rather than just a CLI-based game, I wanted something that had visuals and sounds- something that <em>felt</em> more like a game. So a fellow Dev Bootcamp student and I did some searching, some twitter research, and settled on the simple render library for Ruby called <a href="http://www.libgosu.org/">Gosu</a>.</p>
 
-<p>Outside of the world of tech, I game regularly (Minecraft, occasional MMO, possibly League and various indie titles), cook constantly, read voraciously (technical books, fantasy/sci-fi epics, historical fiction and literature classics), write (prose, poetry and blogging), and generally do what I can to explore my new home city of Chicago as best as the weather allows.</p>
+<h2 id="concept">Concept</h2>
+
+<p>Although I did want to take a big leap forward from the old CLI-based game, I didn’t want to destroy my own sanity by doing something really out there/crazy or too technically difficult for me. I thought back to some of the oldest/simplest games I could think of and I remembered my childhood love for Pokemon- the <em>original</em> pokemon, Red and Blue. And I knew it- I wanted a game that looked and felt like an old tile-based, nearly black-and-white game.</p>
+
+<p>Once I had the aesthetics locked into my head, I knew I’d have to keep the gameplay elements pretty simple- you can’t have an amazing fighting game or shooter using that old style, so I started to think what would be easy to get as a sample. After some consideration, I decided on a farmsim- you’d play a farmer who raised some crops! From there, and some excited chatting with my future coconspirator <a href="http://marycbaylis.github.io/">Mary Baylis</a>, we came up with a few more features, an end game, and some gameplay elements.</p>
+
+<p>Again, the main goal of this is not to make a revolutionary game- just for development practice. After all, I’ve only been doing development for about 6 weeks right now, and we knew pumping out a game made practically from scratch would be be an enormous challenge. And it is.</p>
+
+<h2 id="first-steps">First Steps</h2>
+
+<p>The first challenge came from building our little engine from scratch- tile-based movement, animation, and handling the update/draw loops. Gosu is fairly lightweight, having your basic window and drawing controls as well as an update and a draw loop that run 60 ticks/second- and nothing else. We started off by throwing together some really simple 16x16 pixel art and then embarked on the movement engine late on a Saturday night.</p>
+
+<p>Here’s what we’ve got so far:</p>
+
+<div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/KDbtDBXPrwM" frameborder="0" allowfullscreen=""></iframe></div>
+
+<h2 id="the-future">The Future</h2>
+
+<p>There’s a lot more to do for Gemfarm- tons of additional features to implement and work to add in. I spent 4+ hours today tracking down a bug in the movement engine- while adding in the ability to face a new direction when you tap lightly, I exposed an old bug that had been in place but invisible since the first night’s worth of work. Starting to really feel like a developer.</p>
+
+<p>If you like what you see here and want to learn more about Gemfarm, check out the <a href="https://github.com/secade/gemfarm">github repo</a>- all code is open and available for your viewing pleasure!</p>
 
   </article>
 

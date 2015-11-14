@@ -6,8 +6,8 @@
 </description>
     <link>http://tremulaes.com/</link>
     <atom:link href="http://tremulaes.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 14 Nov 2015 14:18:06 -0600</pubDate>
-    <lastBuildDate>Sat, 14 Nov 2015 14:18:06 -0600</lastBuildDate>
+    <pubDate>Sat, 14 Nov 2015 15:25:37 -0600</pubDate>
+    <lastBuildDate>Sat, 14 Nov 2015 15:25:37 -0600</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -234,6 +234,44 @@
         
         
         <category>blog</category>
+        
+      </item>
+    
+      <item>
+        <title>Gemfarm Preview</title>
+        <description>&lt;h1 id=&quot;new-project-gemfarm&quot;&gt;New Project: Gemfarm&lt;/h1&gt;
+&lt;p&gt;## The Inspiration&lt;/p&gt;
+
+&lt;p&gt;Although I have no desire to do it professionally, I’ve always had a desire to do some video game development. My old college roommate and good friend is now a professional indie dev with the &lt;a href=&quot;http://hitboxteam.com/&quot;&gt;Hitbox Team&lt;/a&gt; studio and I was able to meet a lot of other really passionate devs by attending PAX Seattle last summer. Suffice to say, my appetite was whetted.&lt;/p&gt;
+
+&lt;p&gt;After working on a homebrew, ruby CLI version of &lt;a href=&quot;/portfolio/rubysweeper/&quot;&gt;minesweeper&lt;/a&gt;, I wanted to go a lot further. Rather than just a CLI-based game, I wanted something that had visuals and sounds- something that &lt;em&gt;felt&lt;/em&gt; more like a game. So a fellow Dev Bootcamp student and I did some searching, some twitter research, and settled on the simple render library for Ruby called &lt;a href=&quot;http://www.libgosu.org/&quot;&gt;Gosu&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;concept&quot;&gt;Concept&lt;/h2&gt;
+
+&lt;p&gt;Although I did want to take a big leap forward from the old CLI-based game, I didn’t want to destroy my own sanity by doing something really out there/crazy or too technically difficult for me. I thought back to some of the oldest/simplest games I could think of and I remembered my childhood love for Pokemon- the &lt;em&gt;original&lt;/em&gt; pokemon, Red and Blue. And I knew it- I wanted a game that looked and felt like an old tile-based, nearly black-and-white game.&lt;/p&gt;
+
+&lt;p&gt;Once I had the aesthetics locked into my head, I knew I’d have to keep the gameplay elements pretty simple- you can’t have an amazing fighting game or shooter using that old style, so I started to think what would be easy to get as a sample. After some consideration, I decided on a farmsim- you’d play a farmer who raised some crops! From there, and some excited chatting with my future coconspirator &lt;a href=&quot;http://marycbaylis.github.io/&quot;&gt;Mary Baylis&lt;/a&gt;, we came up with a few more features, an end game, and some gameplay elements.&lt;/p&gt;
+
+&lt;p&gt;Again, the main goal of this is not to make a revolutionary game- just for development practice. After all, I’ve only been doing development for about 6 weeks right now, and we knew pumping out a game made practically from scratch would be be an enormous challenge. And it is.&lt;/p&gt;
+
+&lt;h2 id=&quot;first-steps&quot;&gt;First Steps&lt;/h2&gt;
+
+&lt;p&gt;The first challenge came from building our little engine from scratch- tile-based movement, animation, and handling the update/draw loops. Gosu is fairly lightweight, having your basic window and drawing controls as well as an update and a draw loop that run 60 ticks/second- and nothing else. We started off by throwing together some really simple 16x16 pixel art and then embarked on the movement engine late on a Saturday night.&lt;/p&gt;
+
+&lt;p&gt;Here’s what we’ve got so far:&lt;/p&gt;
+
+&lt;div class=&quot;video-container&quot;&gt;&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/KDbtDBXPrwM&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;the-future&quot;&gt;The Future&lt;/h2&gt;
+
+&lt;p&gt;There’s a lot more to do for Gemfarm- tons of additional features to implement and work to add in. I spent 4+ hours today tracking down a bug in the movement engine- while adding in the ability to face a new direction when you tap lightly, I exposed an old bug that had been in place but invisible since the first night’s worth of work. Starting to really feel like a developer.&lt;/p&gt;
+
+&lt;p&gt;If you like what you see here and want to learn more about Gemfarm, check out the &lt;a href=&quot;https://github.com/secade/gemfarm&quot;&gt;github repo&lt;/a&gt;- all code is open and available for your viewing pleasure!&lt;/p&gt;
+</description>
+        <pubDate>Wed, 18 Feb 2015 00:00:00 -0600</pubDate>
+        <link>http://tremulaes.com/2015/02/18/gemfarm_intro.html</link>
+        <guid isPermaLink="true">http://tremulaes.com/2015/02/18/gemfarm_intro.html</guid>
+        
         
       </item>
     

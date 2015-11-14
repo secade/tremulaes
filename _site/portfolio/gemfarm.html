@@ -6,12 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>About</title>
+  <title>Portfolio: Gemfarm</title>
   <meta name="description" content="A land of code, coffee, but practically no common sense.
 ">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://tremulaes.com/about/">
+  <link rel="canonical" href="http://tremulaes.com/portfolio/gemfarm.html">
   <link rel="alternate" type="application/rss+xml" title="Chris Singer" href="http://tremulaes.com/feed.xml" />
 </head>
 
@@ -49,17 +49,31 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">About</h1>
+    <h1 class="post-title">Portfolio: Gemfarm</h1>
   </header>
 
   <article class="post-content">
-    <p>I believe development is the perfect union between creative expression and logical interpretation. My role as a developer is to use every skill I have to find unique and creative solutions to problems. I want to bring a positive and excited energy with me wherever I go.</p>
+    <p><img src="/img/gemfarm-gameplay.png" alt="Old Homepage" /></p>
 
-<p>Development attracted me due to its dual nature of solving both technical problems and people problems. The intellectual challenge of constantly evolving technologies and culture in dev is a big part of what attracted me to the field; always having something new to push me, to stretch me and for me to explore is exhilarating and helps satisfy my innate curiosity.</p>
+<p>The beginnings of Gemfarm are detailed more thoroughly in <a href="/2015/02/18/gemfarm_intro/">this blog post</a>, but in preparation of me beginning my time in the intensive portion of <a href="/portfolio/dev-bootcamp/">code school</a>, I’ve decided to go ahead and put Gemfarm to rest now that I’ve reached a decent stopping point.</p>
 
-<p>Since learning how to code, a favorite hobby of mine has become game design. The complex nature of building games and the team dynamics involved in bringing a project together are really exciting topics for me, and the ability to see something that I’ve helped to create come to completion brings a real sense of satisfaction. Specifically my interests are currently web development, but especially love solving any complex problem. Though my first love is Ruby, any other language or stack is just a new world to explore.</p>
+<p>Gemfarm is a small sample game about a farmer named Ruby trapped in a tiny world on which she farms. I intentionally chose to do a game modeled after a classic Gameboy style- tile-based movement and extra basic colors (primarily white, black, and two shades of gray). Special sprites use a single color to splash a little more life into the game. Take a look below at the original gameplay sample:</p>
 
-<p>Outside of the world of tech, I game regularly (Minecraft, occasional MMO, possibly League and various indie titles), cook constantly, read voraciously (technical books, fantasy/sci-fi epics, historical fiction and literature classics), write (prose, poetry and blogging), and generally do what I can to explore my new home city of Chicago as best as the weather allows.</p>
+<div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/KDbtDBXPrwM" frameborder="0" allowfullscreen=""></iframe></div>
+
+<h4 id="updates">Updates</h4>
+
+<p>I spent a week working on the project total, going from no knowledge of how to build a game to a functional, if boring, usable game. The library that I used is called <a href="http://www.libgosu.org/">Gosu</a> and is very lightweight- it handles some basic drawing functions by creating a window on which you can call all your draw commands, some basic User Input help with easy, built in methods for reading keyboard input, and the window class comes with a basic gameloop built in it- empty update/draw functions running at approximately 60 ticks/second.</p>
+
+<p>Everything else was built by myself from raw Ruby. All graphics were created by me for use in this game and all sounds, excepting a ‘bubble’ sound effect, were also made just for this game using (Famitracker)[http://famitracker.com/]. Graphics were made using the online pixel-art editor (Piskell)[http://www.piskelapp.com/] which came with really useful tools for handling animated sprites and automatic creating of spritesheets.</p>
+
+<p>The biggest challenge for this project came in the overall code design of the project. I’ve been learning coding for about 7 weeks now and handling the complexity and scale of this was surprisingly difficult. Knowing when to create new classes and objects is a talent and one that I’m sorely lackling- a quick review of <a href="https://github.com/secade/gemfarm">my code</a> reveals about twenty different things that should be seperated into their own classes and objects, but I was often lacking either understanding or time.</p>
+
+<p><img src="/img/gemfarm-ruby.png" alt="Ruby Spritesheet" /></p>
+
+<p>Still, the project did come together. This was the first gui I’d ever designed programmatically and it was awesome to see my work come together and become something that users could actually interact with directly. Every new feature implemented, whether it was the text ability for slow scrolling onto a screen or the goofy title screen that I eventually made, was a joy and felt like a victory.</p>
+
+<p>I really pushed my limits here and although I’m sad to leave Ruby behind- after all, I have a billion ideas to make the gameplay better, smoother, and more interesting- but it’s time to move on to my next project and focus on succeeding in code school. I enjoyed meeting Ruby and look forward to creating more fun and exciting projects like this one.</p>
 
   </article>
 
