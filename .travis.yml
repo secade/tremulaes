@@ -1,0 +1,25 @@
+language: ruby
+rvm:
+    - "2.2.0"
+cache: apt
+install:
+    - "install: gem install jekyll"
+script: "bundle exec jekyll build --trace"
+branches:
+  only:
+    - master
+sudo: false
+deploy:
+    provider: s3
+    access_key_id: $AWS_ACCESS_KEY
+    secret_access_key: $AWS_SECRET_KEY
+    bucket: $AWS_BUCKET
+    endpoint: $AWS_ENDPOINT
+    region: $AWS_REGION
+    skip_cleanup: true
+    local-dir: _site/
+    acl: public_read
+    detect_encoding: true
+notifications:
+    email:
+        on_failure: always
