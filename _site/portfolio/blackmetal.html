@@ -11,8 +11,8 @@
 ">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://tremulaes.com/portfolio/blackmetal.html">
-  <link rel="alternate" type="application/rss+xml" title="Chris Singer" href="http://tremulaes.com/feed.xml" />
+  <link rel="canonical" href="http://localhost:4000/portfolio/blackmetal.html">
+  <link rel="alternate" type="application/rss+xml" title="Chris Singer" href="http://localhost:4000/feed.xml" />
 </head>
 
 
@@ -87,16 +87,26 @@
 
 <p>After a good night’s sleep, I woke up and realized the issue may lie elsewhere. Although the images files were themselves small, I was reloading them each time a new sprite was created. Every single sprite had to load not only itself but also it’s entire image into memory. Realizing that may be eating up all my memory, I decided to build a small asset library class to handle images and fonts.</p>
 
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="lineno"> 1</span> <span class="k">class</span> <span class="nc">Bullets</span>
-<span class="lineno"> 2</span>     <span class="kp">attr_reader</span> <span class="ss">:small</span><span class="p">,</span> <span class="ss">:enemy_small</span><span class="p">,</span> <span class="ss">:light_orb</span><span class="p">,</span> <span class="ss">:spinning_star</span>
-<span class="lineno"> 3</span> 
-<span class="lineno"> 4</span>     <span class="k">def</span> <span class="nf">initialize</span><span class="p">(</span><span class="n">game</span><span class="p">)</span>
-<span class="lineno"> 5</span>       <span class="vi">@small</span> <span class="o">=</span> <span class="no">Gosu</span><span class="o">::</span><span class="no">Image</span><span class="o">.</span><span class="n">load_tiles</span><span class="p">(</span><span class="n">game</span><span class="p">,</span> <span class="s2">&quot;assets/img/bullet.png&quot;</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="kp">false</span><span class="p">)</span>
-<span class="lineno"> 6</span>       <span class="vi">@enemy_small</span> <span class="o">=</span> <span class="no">Gosu</span><span class="o">::</span><span class="no">Image</span><span class="o">.</span><span class="n">load_tiles</span><span class="p">(</span><span class="n">game</span><span class="p">,</span> <span class="s2">&quot;assets/img/enemy_bullet.png&quot;</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="kp">false</span><span class="p">)</span>
-<span class="lineno"> 7</span>       <span class="vi">@light_orb</span> <span class="o">=</span> <span class="no">Gosu</span><span class="o">::</span><span class="no">Image</span><span class="o">.</span><span class="n">load_tiles</span><span class="p">(</span><span class="n">game</span><span class="p">,</span> <span class="s2">&quot;assets/img/light_orb.png&quot;</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="kp">false</span><span class="p">)</span>
-<span class="lineno"> 8</span>       <span class="vi">@spinning_star</span> <span class="o">=</span> <span class="no">Gosu</span><span class="o">::</span><span class="no">Image</span><span class="o">.</span><span class="n">load_tiles</span><span class="p">(</span><span class="n">game</span><span class="p">,</span> <span class="s2">&quot;assets/img/spinning_star.png&quot;</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="kp">false</span><span class="p">)</span>
-<span class="lineno"> 9</span>     <span class="k">end</span>
-<span class="lineno">10</span>   <span class="k">end</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10</pre></td><td class="code"><pre><span class="k">class</span> <span class="nc">Bullets</span>
+    <span class="kp">attr_reader</span> <span class="ss">:small</span><span class="p">,</span> <span class="ss">:enemy_small</span><span class="p">,</span> <span class="ss">:light_orb</span><span class="p">,</span> <span class="ss">:spinning_star</span>
+
+    <span class="k">def</span> <span class="nf">initialize</span><span class="p">(</span><span class="n">game</span><span class="p">)</span>
+      <span class="vi">@small</span> <span class="o">=</span> <span class="no">Gosu</span><span class="o">::</span><span class="no">Image</span><span class="p">.</span><span class="nf">load_tiles</span><span class="p">(</span><span class="n">game</span><span class="p">,</span> <span class="s2">"assets/img/bullet.png"</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="kp">false</span><span class="p">)</span>
+      <span class="vi">@enemy_small</span> <span class="o">=</span> <span class="no">Gosu</span><span class="o">::</span><span class="no">Image</span><span class="p">.</span><span class="nf">load_tiles</span><span class="p">(</span><span class="n">game</span><span class="p">,</span> <span class="s2">"assets/img/enemy_bullet.png"</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="kp">false</span><span class="p">)</span>
+      <span class="vi">@light_orb</span> <span class="o">=</span> <span class="no">Gosu</span><span class="o">::</span><span class="no">Image</span><span class="p">.</span><span class="nf">load_tiles</span><span class="p">(</span><span class="n">game</span><span class="p">,</span> <span class="s2">"assets/img/light_orb.png"</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="kp">false</span><span class="p">)</span>
+      <span class="vi">@spinning_star</span> <span class="o">=</span> <span class="no">Gosu</span><span class="o">::</span><span class="no">Image</span><span class="p">.</span><span class="nf">load_tiles</span><span class="p">(</span><span class="n">game</span><span class="p">,</span> <span class="s2">"assets/img/spinning_star.png"</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="kp">false</span><span class="p">)</span>
+    <span class="k">end</span>
+  <span class="k">end</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
 
 <p>Once that was resolved, everything began moving at a good speed and I ran into no further issues with memory. Loading all my images up at game start and simply referring to them was a nice strategy and one that I definitely plan on using in the future for bigger projects, though projects with MonoGame and XNA have this built in with their content pipelines.</p>
 
@@ -108,20 +118,34 @@
 
 <p>I also strongly dislike my collision engine. It’s very straight forward and simple but is extremely inefficient- every object being calculated against every other object each cycle. I tried to cut this down by checking only enemies against player objects, but it’s still functionally O(c^n). After reading up on collision engine strategies, I discovered that this is a pretty common issue in game dev and better solutions can take a really significant amount of time to draw up.</p>
 
-<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="lineno"> 1</span> <span class="k">class</span> <span class="nc">CollisionEngine</span>
-<span class="lineno"> 2</span>   <span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">check</span><span class="p">(</span><span class="n">player</span><span class="p">)</span>
-<span class="lineno"> 3</span>     <span class="n">baddies</span> <span class="o">=</span> <span class="no">Enemies</span><span class="o">.</span><span class="n">enemies</span> <span class="o">+</span> <span class="no">Bullets</span><span class="o">.</span><span class="n">enemy_bullets</span>
-<span class="lineno"> 4</span>     <span class="n">goodies</span> <span class="o">=</span> <span class="o">[</span><span class="n">player</span><span class="o">]</span> <span class="o">+</span> <span class="no">Bullets</span><span class="o">.</span><span class="n">player_bullets</span>
-<span class="lineno"> 5</span>     <span class="n">baddies</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">b</span><span class="o">|</span>
-<span class="lineno"> 6</span>       <span class="n">goodies</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">g</span><span class="o">|</span>
-<span class="lineno"> 7</span>         <span class="k">if</span> <span class="n">b</span><span class="o">.</span><span class="n">collide?</span><span class="p">(</span><span class="n">g</span><span class="p">)</span>
-<span class="lineno"> 8</span>           <span class="n">b</span><span class="o">.</span><span class="n">collide</span><span class="p">(</span><span class="n">g</span><span class="p">)</span>
-<span class="lineno"> 9</span>           <span class="n">g</span><span class="o">.</span><span class="n">collide</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
-<span class="lineno">10</span>         <span class="k">end</span>
-<span class="lineno">11</span>       <span class="k">end</span>
-<span class="lineno">12</span>     <span class="k">end</span>
-<span class="lineno">13</span>   <span class="k">end</span>
-<span class="lineno">14</span> <span class="k">end</span></code></pre></div>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14</pre></td><td class="code"><pre><span class="k">class</span> <span class="nc">CollisionEngine</span>
+  <span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">check</span><span class="p">(</span><span class="n">player</span><span class="p">)</span>
+    <span class="n">baddies</span> <span class="o">=</span> <span class="no">Enemies</span><span class="p">.</span><span class="nf">enemies</span> <span class="o">+</span> <span class="no">Bullets</span><span class="p">.</span><span class="nf">enemy_bullets</span>
+    <span class="n">goodies</span> <span class="o">=</span> <span class="p">[</span><span class="n">player</span><span class="p">]</span> <span class="o">+</span> <span class="no">Bullets</span><span class="p">.</span><span class="nf">player_bullets</span>
+    <span class="n">baddies</span><span class="p">.</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">b</span><span class="o">|</span>
+      <span class="n">goodies</span><span class="p">.</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">g</span><span class="o">|</span>
+        <span class="k">if</span> <span class="n">b</span><span class="p">.</span><span class="nf">collide?</span><span class="p">(</span><span class="n">g</span><span class="p">)</span>
+          <span class="n">b</span><span class="p">.</span><span class="nf">collide</span><span class="p">(</span><span class="n">g</span><span class="p">)</span>
+          <span class="n">g</span><span class="p">.</span><span class="nf">collide</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+        <span class="k">end</span>
+      <span class="k">end</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+<span class="k">end</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
 
 <p>Another glaring opportunity for improvement is my enemy movement strategies- I just threw in a bunch of randomized elements but their use is completely unscalable and largely unusuable if I actually want to program in anything heavier or more intentional. I’d like to develop a better strategy that can accept plotted out trajectories or behaviors for more control, though the small scale of the project didn’t really necessitate it. Just a personal desire to have better enemies, or something close to a functional AI.</p>
 

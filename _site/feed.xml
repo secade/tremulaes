@@ -4,11 +4,45 @@
     <title>Chris Singer</title>
     <description>A land of code, coffee, but practically no common sense.
 </description>
-    <link>http://tremulaes.com/</link>
-    <atom:link href="http://tremulaes.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 22 Jan 2017 12:01:03 -0600</pubDate>
-    <lastBuildDate>Sun, 22 Jan 2017 12:01:03 -0600</lastBuildDate>
-    <generator>Jekyll v2.5.3</generator>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 22 Jan 2017 13:43:42 -0600</pubDate>
+    <lastBuildDate>Sun, 22 Jan 2017 13:43:42 -0600</lastBuildDate>
+    <generator>Jekyll v3.3.1</generator>
+    
+      <item>
+        <title>Arbitrary</title>
+        <description>&lt;p&gt;Two years ago today, I was likely working a double-shift at a call center in Columbus, Ohio. The first half would have been providing internal IT support for the center- everything from basic hardware maintenance (“Your computer turned off because you kicked it so hard the power cord came out”) to building custom scripts for the varied clients, to helping maintain some of the physical server infrastructure that we kept in house. The second shift would have been on the boards themselves, taking calls, likely overnight, thanks to the unlimited OT policy at the time.&lt;/p&gt;
+
+&lt;p&gt;It worked out well for me, though my time at that call center really pushed me past the breaking point every once in a while- you know, a few times a week. Two years ago today, I would be knee-deep in the remote, part-time portion of the code school I was planning to attend with the hopes that it would help transform my professional life into something more satisfying and fiscally solvent. I would have rarely seen my friends during that time, but many of the wonderful people in my life supported me endlessly- treating me to Chipotle, buying me a few beers, and pushing me to continue working my ass off to get where I wanted to be.&lt;/p&gt;
+
+&lt;h2 id=&quot;now&quot;&gt;Now&lt;/h2&gt;
+
+&lt;p&gt;Now, two years later, I feel that the emotions and stresses of 2015 are so distant and foggy that I can barely remember the personal cost of those challenges- it’s easy to forget the pain because the outcome has been so positive. I am thankful for the opportunities I’ve had to not only change my career entirely, but also continue moving forward and growing as an individual and as a professional. 2017 looks to be a challenging year, but one with an enormous potential for the success I desire.&lt;/p&gt;
+
+&lt;p&gt;I’ve set a few goals to take me where I want to be over the next [arbitrary unit of time]:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Debt-free by 30 (October of this year)&lt;/li&gt;
+  &lt;li&gt;Establish a process for taking on private contract work as a developer and have at least two successful contracts&lt;/li&gt;
+  &lt;li&gt;Continue focusing on my physical, mental, and fiscal health be exercising and eating healthily on a regular basis&lt;/li&gt;
+  &lt;li&gt;Spend time giving back to causes that I care about by taking a leadership role in a local volunteer organization&lt;/li&gt;
+  &lt;li&gt;Read a book every two weeks&lt;/li&gt;
+  &lt;li&gt;Watch a new movie every two weeks&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Goals are always arbitrary, but I find I do best with some concept of metrics assigned to my goals. There’s not much of a rush for anything, and there’s no desperate need to accomplish any one of these particular things by some arbitrary deadline, but I hope to report positively on the development of the above list over the next [arbitrary unit of time].&lt;/p&gt;
+
+&lt;p&gt;Thanks to all who have helped, bolstered, assisted, or confided in me. I’m looking forward to the next steps.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 22 Jan 2017 08:44:00 -0600</pubDate>
+        <link>http://localhost:4000/blog/2017/01/22/reboot.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2017/01/22/reboot.html</guid>
+        
+        
+        <category>blog</category>
+        
+      </item>
     
       <item>
         <title>Retro</title>
@@ -35,8 +69,8 @@
 &lt;p&gt;The past few months have been stressful and the settling into a new home has been a little tougher than expected, but just like &lt;a href=&quot;https://en.wikipedia.org/wiki/GLaDOS&quot;&gt;GLaDOS&lt;/a&gt;, I am &lt;a href=&quot;https://www.youtube.com/watch?v=Y6ljFaKRTrI&quot;&gt;still alive&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Thu, 10 Dec 2015 08:44:00 -0600</pubDate>
-        <link>http://tremulaes.com/blog/2015/12/10/retro.html</link>
-        <guid isPermaLink="true">http://tremulaes.com/blog/2015/12/10/retro.html</guid>
+        <link>http://localhost:4000/blog/2015/12/10/retro.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2015/12/10/retro.html</guid>
         
         
         <category>blog</category>
@@ -82,8 +116,8 @@
 &lt;p&gt;As people writing software, it’s not our job to be clairvoyant; it’s simply to solve problems. Let’s make sure we’re solving the problem at hand.&lt;/p&gt;
 </description>
         <pubDate>Sat, 14 Nov 2015 06:51:00 -0600</pubDate>
-        <link>http://tremulaes.com/blog/2015/11/14/minimalism.html</link>
-        <guid isPermaLink="true">http://tremulaes.com/blog/2015/11/14/minimalism.html</guid>
+        <link>http://localhost:4000/blog/2015/11/14/minimalism.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2015/11/14/minimalism.html</guid>
         
         
         <category>blog</category>
@@ -152,7 +186,7 @@
 
 &lt;h4 id=&quot;step-2-jekyll&quot;&gt;Step 2: Jekyll&lt;/h4&gt;
 
-&lt;p&gt;Now it’s time to actually build your site. Using Jekyll is pretty straightforward- mostly you’ll just be doing front-end development work as you craft your html layouts, throwing on CSS and JS to your liking. Jekyll has great integration with Sass, my favorite tool for writing CSS, and it allows you to preview your site build with the simple &lt;code&gt;jekyll serve --watch&lt;/code&gt; command. Check out &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;their docs&lt;/a&gt; for help in getting your site up and running.&lt;/p&gt;
+&lt;p&gt;Now it’s time to actually build your site. Using Jekyll is pretty straightforward- mostly you’ll just be doing front-end development work as you craft your html layouts, throwing on CSS and JS to your liking. Jekyll has great integration with Sass, my favorite tool for writing CSS, and it allows you to preview your site build with the simple &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve --watch&lt;/code&gt; command. Check out &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;their docs&lt;/a&gt; for help in getting your site up and running.&lt;/p&gt;
 
 &lt;p&gt;I recommend that at this point, you only make a small shell of your site- hell, just use the basic jekyll templated site that they give you out of the box! Getting your continuous deployment set up early will make actually developing your site a breeze since getting your changes live is just a matter of pushing to git master.&lt;/p&gt;
 
@@ -165,10 +199,10 @@
 
 &lt;p&gt;For a standard Jekyll project, a Gemfile likely wouldn’t be necessary. If you’re deploying manually, you won’t need one at all. However, since we’re deploying to Wercker, we need it so that our Wercker box will know what gems to install in order to build our site- namely, the jekyll gem! You’ll also want to add any other gems that are necessary for building your site. Keep it thin or else your builds may start to take a while. Here’s all you need in a basic Gemfile:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;source&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;https://rubygems.org&amp;quot;&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;source&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;https://rubygems.org&quot;&lt;/span&gt;
 
-&lt;span class=&quot;n&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;jekyll&amp;#39;&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;sass&amp;#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;span class=&quot;n&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'jekyll'&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'sass'&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;I’m not 100% sure if the Sass gem is needed or if it comes packaged with Jekyll, but just to be safe, I name it explicitly. Be sure to include this in your project root. (Note: Gemfile is for gem management through ‘bundler’; check their docs out &lt;a href=&quot;http://bundler.io/gemfile.html&quot;&gt;here&lt;/a&gt;).&lt;/p&gt;
 
@@ -176,25 +210,25 @@
 
 &lt;p&gt;Getting a &lt;a href=&quot;http://wercker.com/&quot;&gt;Wercker&lt;/a&gt; account is as simple as linking to your Github or making your own account. You’ll need to link to your version control tool (again, Github or Bitbucket only at this time!), and once you do, you can start your setup by adding a new application. It’ll sync with your version control and look for the repo that your site code is stored on. Once you get it linked, you’re ready to start configuring.&lt;/p&gt;
 
-&lt;p&gt;First, lets configure our build setup. This is done by making a &lt;code&gt;wercker.yml&lt;/code&gt; at your project root. I use the following code for both projects:&lt;/p&gt;
+&lt;p&gt;First, lets configure our build setup. This is done by making a &lt;code class=&quot;highlighter-rouge&quot;&gt;wercker.yml&lt;/code&gt; at your project root. I use the following code for both projects:&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;l-Scalar-Plain&quot;&gt;box&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;wercker/ruby&lt;/span&gt;
-&lt;span class=&quot;l-Scalar-Plain&quot;&gt;build&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;l-Scalar-Plain&quot;&gt;steps&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt;
-      &lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;bundle-install&lt;/span&gt;
-      &lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt;
-          &lt;span class=&quot;l-Scalar-Plain&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;generate site&lt;/span&gt;
-          &lt;span class=&quot;l-Scalar-Plain&quot;&gt;code&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;bundle exec jekyll build --trace&lt;/span&gt;
-&lt;span class=&quot;l-Scalar-Plain&quot;&gt;deploy&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;l-Scalar-Plain&quot;&gt;steps&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt;
-        &lt;span class=&quot;p-Indicator&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;s3sync&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt;
-            &lt;span class=&quot;l-Scalar-Plain&quot;&gt;key_id&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;$KEY&lt;/span&gt;
-            &lt;span class=&quot;l-Scalar-Plain&quot;&gt;key_secret&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;$SECRET&lt;/span&gt;
-            &lt;span class=&quot;l-Scalar-Plain&quot;&gt;bucket_url&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;$URL&lt;/span&gt;
-            &lt;span class=&quot;l-Scalar-Plain&quot;&gt;source_dir&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;l-Scalar-Plain&quot;&gt;_site/&lt;/span&gt;
-            &lt;span class=&quot;l-Scalar-Plain&quot;&gt;opts&lt;/span&gt;&lt;span class=&quot;p-Indicator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p-Indicator&quot;&gt;|&lt;/span&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-yaml&quot; data-lang=&quot;yaml&quot;&gt;&lt;span class=&quot;s&quot;&gt;box&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;wercker/ruby&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;build&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;steps&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;bundle-install&lt;/span&gt;
+      &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;script&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+          &lt;span class=&quot;s&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;generate site&lt;/span&gt;
+          &lt;span class=&quot;s&quot;&gt;code&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;bundle exec jekyll build --trace&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;deploy&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;steps&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;s3sync&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;s&quot;&gt;key_id&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;$KEY&lt;/span&gt;
+            &lt;span class=&quot;s&quot;&gt;key_secret&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;$SECRET&lt;/span&gt;
+            &lt;span class=&quot;s&quot;&gt;bucket_url&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;$URL&lt;/span&gt;
+            &lt;span class=&quot;s&quot;&gt;source_dir&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;_site/&lt;/span&gt;
+            &lt;span class=&quot;s&quot;&gt;opts&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;pi&quot;&gt;|&lt;/span&gt;
                 &lt;span class=&quot;no&quot;&gt;--add-header Cache-Control:max-age=60&lt;/span&gt;
-                 &lt;span class=&quot;no&quot;&gt;--no-preserve&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+                 &lt;span class=&quot;no&quot;&gt;--no-preserve&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://snag.gy/DK8Is.jpg&quot; alt=&quot;Successful wercker build!&quot; /&gt;&lt;/p&gt;
 &lt;div style=&quot;margin:0 auto;text-align:center;&quot;&gt;Successful Wercker build!&lt;/div&gt;
@@ -204,32 +238,32 @@
 &lt;p&gt;&lt;img src=&quot;http://snag.gy/45QW5.jpg&quot; alt=&quot;Wercker deploy config&quot; /&gt;&lt;/p&gt;
 &lt;div style=&quot;margin:0 auto;text-align:center;&quot;&gt;Wercker deploy config&lt;/div&gt;
 
-&lt;p&gt;Next we need to go to our Wercker application and get our deploy set up. Go to the application settings and scroll until you find “Add Deploy Target”. I name mine production since I don’t need a test environment- another advantage of using a static site. Be sure to select ‘auto deploy’ and from your main version control, likely called &lt;code&gt;master&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Next we need to go to our Wercker application and get our deploy set up. Go to the application settings and scroll until you find “Add Deploy Target”. I name mine production since I don’t need a test environment- another advantage of using a static site. Be sure to select ‘auto deploy’ and from your main version control, likely called &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;Next we’ll add three variables to our deploy pipeline. Unless you have a specific need to do otherwise, I recommend adding them to this deploy specifically instead of the overall application. Since you’ll need your AWS IAM credentials, keeping them in as small as a scope as is required is overall just best practice. Now we can add:&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;KEY - this will be the public key given to you by your AWS IAM account.&lt;/li&gt;
   &lt;li&gt;SECRET - secret key from your AWS IAM account.&lt;/li&gt;
-  &lt;li&gt;URL - your website’s base url prefixed with &lt;code&gt;s3://&lt;/code&gt;. For this site, it is &lt;code&gt;s3://tremulaes.com&lt;/code&gt; (no www.).&lt;/li&gt;
+  &lt;li&gt;URL - your website’s base url prefixed with &lt;code class=&quot;highlighter-rouge&quot;&gt;s3://&lt;/code&gt;. For this site, it is &lt;code class=&quot;highlighter-rouge&quot;&gt;s3://tremulaes.com&lt;/code&gt; (no www.).&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;Although you can hardcode the url directly into your &lt;code&gt;wercker.yml&lt;/code&gt;, I don’t because I’m lazy and want to reuse the exact same file between projects.&lt;/p&gt;
+&lt;p&gt;Although you can hardcode the url directly into your &lt;code class=&quot;highlighter-rouge&quot;&gt;wercker.yml&lt;/code&gt;, I don’t because I’m lazy and want to reuse the exact same file between projects.&lt;/p&gt;
 
 &lt;p&gt;Moving further down, I set my app as public on Wercker since I have no reason not to, but this is up to you. Be sure to hit the ‘Fix Webhook’ button so that it’ll automatically build your site whenever you push to your master branch (as configured above). Just underneath that, you’ll have to choose your ‘Infrastructure’ stack- be sure to update this to ‘Infra stack (classic)’, or ‘Classic (Andorian)’. They’re the same thing but Wercker seems to call it different things, so just choose whatever has ‘classic’ and NOT what has ‘Docker’ in the name.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://snag.gy/6jUoa.jpg&quot; alt=&quot;Successful Wercker Deploy!&quot; /&gt;&lt;/p&gt;
 &lt;div style=&quot;margin:0 auto;text-align:center;&quot;&gt;Successful Wercker deploy!&lt;/div&gt;
 
-&lt;h4 id=&quot;testing-and-completion&quot;&gt;5. Testing and Completion&lt;/h4&gt;
+&lt;h4 id=&quot;5-testing-and-completion&quot;&gt;5. Testing and Completion&lt;/h4&gt;
 
-&lt;p&gt;Voila! Assuming each individual step has been completed successfully, your public site should be a) live at your url and b) building and deploying with every push to master. If you run into issues, read your build failures carefully and always look first at your config files- &lt;code&gt;Gemfile&lt;/code&gt;, &lt;code&gt;_config.yml&lt;/code&gt;, and &lt;code&gt;wercker.yml&lt;/code&gt;. Google your errors and read through the technical documentation of the services you’re using.&lt;/p&gt;
+&lt;p&gt;Voila! Assuming each individual step has been completed successfully, your public site should be a) live at your url and b) building and deploying with every push to master. If you run into issues, read your build failures carefully and always look first at your config files- &lt;code class=&quot;highlighter-rouge&quot;&gt;Gemfile&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;, and &lt;code class=&quot;highlighter-rouge&quot;&gt;wercker.yml&lt;/code&gt;. Google your errors and read through the technical documentation of the services you’re using.&lt;/p&gt;
 
 &lt;p&gt;And be sure to enjoy your new site!&lt;/p&gt;
 </description>
         <pubDate>Mon, 09 Nov 2015 08:55:37 -0600</pubDate>
-        <link>http://tremulaes.com/blog/2015/11/09/static-site-tutorial.html</link>
-        <guid isPermaLink="true">http://tremulaes.com/blog/2015/11/09/static-site-tutorial.html</guid>
+        <link>http://localhost:4000/blog/2015/11/09/static-site-tutorial.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2015/11/09/static-site-tutorial.html</guid>
         
         
         <category>blog</category>
@@ -241,8 +275,8 @@
         <description>&lt;p&gt;I’ve updated my &lt;a href=&quot;/about&quot;&gt;about me&lt;/a&gt; section with some specific content about myself instead of the general Jekyll nonsense. There’s not a whole lot going on with the site yet… I’m still debating which of my old posts I should port over, and how exactly I want this site to look. I really struggle with picking sensible colors; maybe I should ask for help?&lt;/p&gt;
 </description>
         <pubDate>Sat, 07 Nov 2015 09:01:00 -0600</pubDate>
-        <link>http://tremulaes.com/blog/2015/11/07/first-steps.html</link>
-        <guid isPermaLink="true">http://tremulaes.com/blog/2015/11/07/first-steps.html</guid>
+        <link>http://localhost:4000/blog/2015/11/07/first-steps.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2015/11/07/first-steps.html</guid>
         
         
         <category>blog</category>
@@ -262,8 +296,8 @@
 &lt;p&gt;Welcome to my new site. Hope you’ll stick around and enjoy it :)&lt;/p&gt;
 </description>
         <pubDate>Fri, 16 Oct 2015 09:55:37 -0500</pubDate>
-        <link>http://tremulaes.com/blog/2015/10/16/welcome-to-new-site.html</link>
-        <guid isPermaLink="true">http://tremulaes.com/blog/2015/10/16/welcome-to-new-site.html</guid>
+        <link>http://localhost:4000/blog/2015/10/16/welcome-to-new-site.html</link>
+        <guid isPermaLink="true">http://localhost:4000/blog/2015/10/16/welcome-to-new-site.html</guid>
         
         
         <category>blog</category>
@@ -273,7 +307,7 @@
       <item>
         <title>Gemfarm Preview</title>
         <description>&lt;h1 id=&quot;new-project-gemfarm&quot;&gt;New Project: Gemfarm&lt;/h1&gt;
-&lt;p&gt;## The Inspiration&lt;/p&gt;
+&lt;h2 id=&quot;the-inspiration&quot;&gt;The Inspiration&lt;/h2&gt;
 
 &lt;p&gt;Although I have no desire to do it professionally, I’ve always had a desire to do some video game development. My old college roommate and good friend is now a professional indie dev with the &lt;a href=&quot;http://hitboxteam.com/&quot;&gt;Hitbox Team&lt;/a&gt; studio and I was able to meet a lot of other really passionate devs by attending PAX Seattle last summer. Suffice to say, my appetite was whetted.&lt;/p&gt;
 
@@ -302,8 +336,8 @@
 &lt;p&gt;If you like what you see here and want to learn more about Gemfarm, check out the &lt;a href=&quot;https://github.com/secade/gemfarm&quot;&gt;github repo&lt;/a&gt;- all code is open and available for your viewing pleasure!&lt;/p&gt;
 </description>
         <pubDate>Wed, 18 Feb 2015 00:00:00 -0600</pubDate>
-        <link>http://tremulaes.com/2015/02/18/gemfarm_intro.html</link>
-        <guid isPermaLink="true">http://tremulaes.com/2015/02/18/gemfarm_intro.html</guid>
+        <link>http://localhost:4000/2015/02/18/gemfarm_intro.html</link>
+        <guid isPermaLink="true">http://localhost:4000/2015/02/18/gemfarm_intro.html</guid>
         
         
       </item>

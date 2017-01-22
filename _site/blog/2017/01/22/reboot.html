@@ -6,11 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Gemfarm Preview</title>
-  <meta name="description" content="Although I did want to take a big leap forward from the old CLI-based game, I didn't want to destroy my own sanity by doing something really out there/crazy ...">
+  <title>Arbitrary</title>
+  <meta name="description" content="Two years ago today, I was likely working a double-shift at a call center in Columbus, Ohio. The first half would have been providing internal IT support for...">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://localhost:4000/2015/02/18/gemfarm_intro.html">
+  <link rel="canonical" href="http://localhost:4000/blog/2017/01/22/reboot.html">
   <link rel="alternate" type="application/rss+xml" title="Chris Singer" href="http://localhost:4000/feed.xml" />
 </head>
 
@@ -48,39 +48,33 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Gemfarm Preview</h1>
-    <p class="post-meta">Feb 18, 2015</p>
+    <h1 class="post-title">Arbitrary</h1>
+    <p class="post-meta">Jan 22, 2017</p>
   </header>
 
   <article class="post-content">
-    <h1 id="new-project-gemfarm">New Project: Gemfarm</h1>
-<h2 id="the-inspiration">The Inspiration</h2>
+    <p>Two years ago today, I was likely working a double-shift at a call center in Columbus, Ohio. The first half would have been providing internal IT support for the center- everything from basic hardware maintenance (“Your computer turned off because you kicked it so hard the power cord came out”) to building custom scripts for the varied clients, to helping maintain some of the physical server infrastructure that we kept in house. The second shift would have been on the boards themselves, taking calls, likely overnight, thanks to the unlimited OT policy at the time.</p>
 
-<p>Although I have no desire to do it professionally, I’ve always had a desire to do some video game development. My old college roommate and good friend is now a professional indie dev with the <a href="http://hitboxteam.com/">Hitbox Team</a> studio and I was able to meet a lot of other really passionate devs by attending PAX Seattle last summer. Suffice to say, my appetite was whetted.</p>
+<p>It worked out well for me, though my time at that call center really pushed me past the breaking point every once in a while- you know, a few times a week. Two years ago today, I would be knee-deep in the remote, part-time portion of the code school I was planning to attend with the hopes that it would help transform my professional life into something more satisfying and fiscally solvent. I would have rarely seen my friends during that time, but many of the wonderful people in my life supported me endlessly- treating me to Chipotle, buying me a few beers, and pushing me to continue working my ass off to get where I wanted to be.</p>
 
-<p>After working on a homebrew, ruby CLI version of <a href="/portfolio/rubysweeper/">minesweeper</a>, I wanted to go a lot further. Rather than just a CLI-based game, I wanted something that had visuals and sounds- something that <em>felt</em> more like a game. So a fellow Dev Bootcamp student and I did some searching, some twitter research, and settled on the simple render library for Ruby called <a href="http://www.libgosu.org/">Gosu</a>.</p>
+<h2 id="now">Now</h2>
 
-<h2 id="concept">Concept</h2>
+<p>Now, two years later, I feel that the emotions and stresses of 2015 are so distant and foggy that I can barely remember the personal cost of those challenges- it’s easy to forget the pain because the outcome has been so positive. I am thankful for the opportunities I’ve had to not only change my career entirely, but also continue moving forward and growing as an individual and as a professional. 2017 looks to be a challenging year, but one with an enormous potential for the success I desire.</p>
 
-<p>Although I did want to take a big leap forward from the old CLI-based game, I didn’t want to destroy my own sanity by doing something really out there/crazy or too technically difficult for me. I thought back to some of the oldest/simplest games I could think of and I remembered my childhood love for Pokemon- the <em>original</em> pokemon, Red and Blue. And I knew it- I wanted a game that looked and felt like an old tile-based, nearly black-and-white game.</p>
+<p>I’ve set a few goals to take me where I want to be over the next [arbitrary unit of time]:</p>
 
-<p>Once I had the aesthetics locked into my head, I knew I’d have to keep the gameplay elements pretty simple- you can’t have an amazing fighting game or shooter using that old style, so I started to think what would be easy to get as a sample. After some consideration, I decided on a farmsim- you’d play a farmer who raised some crops! From there, and some excited chatting with my future coconspirator <a href="http://marycbaylis.github.io/">Mary Baylis</a>, we came up with a few more features, an end game, and some gameplay elements.</p>
+<ul>
+  <li>Debt-free by 30 (October of this year)</li>
+  <li>Establish a process for taking on private contract work as a developer and have at least two successful contracts</li>
+  <li>Continue focusing on my physical, mental, and fiscal health be exercising and eating healthily on a regular basis</li>
+  <li>Spend time giving back to causes that I care about by taking a leadership role in a local volunteer organization</li>
+  <li>Read a book every two weeks</li>
+  <li>Watch a new movie every two weeks</li>
+</ul>
 
-<p>Again, the main goal of this is not to make a revolutionary game- just for development practice. After all, I’ve only been doing development for about 6 weeks right now, and we knew pumping out a game made practically from scratch would be be an enormous challenge. And it is.</p>
+<p>Goals are always arbitrary, but I find I do best with some concept of metrics assigned to my goals. There’s not much of a rush for anything, and there’s no desperate need to accomplish any one of these particular things by some arbitrary deadline, but I hope to report positively on the development of the above list over the next [arbitrary unit of time].</p>
 
-<h2 id="first-steps">First Steps</h2>
-
-<p>The first challenge came from building our little engine from scratch- tile-based movement, animation, and handling the update/draw loops. Gosu is fairly lightweight, having your basic window and drawing controls as well as an update and a draw loop that run 60 ticks/second- and nothing else. We started off by throwing together some really simple 16x16 pixel art and then embarked on the movement engine late on a Saturday night.</p>
-
-<p>Here’s what we’ve got so far:</p>
-
-<div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/KDbtDBXPrwM" frameborder="0" allowfullscreen=""></iframe></div>
-
-<h2 id="the-future">The Future</h2>
-
-<p>There’s a lot more to do for Gemfarm- tons of additional features to implement and work to add in. I spent 4+ hours today tracking down a bug in the movement engine- while adding in the ability to face a new direction when you tap lightly, I exposed an old bug that had been in place but invisible since the first night’s worth of work. Starting to really feel like a developer.</p>
-
-<p>If you like what you see here and want to learn more about Gemfarm, check out the <a href="https://github.com/secade/gemfarm">github repo</a>- all code is open and available for your viewing pleasure!</p>
+<p>Thanks to all who have helped, bolstered, assisted, or confided in me. I’m looking forward to the next steps.</p>
 
   </article>
 
